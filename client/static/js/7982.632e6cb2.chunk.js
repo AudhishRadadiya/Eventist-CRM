@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkeventist_crm=self.webpackChunkeventist_crm||[]).push([[7982],{97982:function(e,c,s){s(72791);c.Z=s.p+"static/media/pdf-icon.0f3aae5f1721b5cc782eba5d024bf44b.svg"}}]);
+//# sourceMappingURL=7982.632e6cb2.chunk.js.map

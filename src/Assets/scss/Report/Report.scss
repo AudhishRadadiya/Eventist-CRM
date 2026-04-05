@@ -1,0 +1,75 @@
+.report_filter_wrap ul {
+  background: #f1f1f1;
+  border-radius: 10px;
+  padding: 7px 15px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  gap: 20px;
+  .date_picker {
+    .MuiFormControl-root {
+      width: 140px;
+    }
+  }
+}
+
+.combine_select {
+  .MuiFormGroup-root {
+    .yaer_select {
+      width: 90px;
+    }
+    .event_select {
+      width: 230px;
+    }
+  }
+}
+
+.contact_filter .form-group.inline span.label {
+  width: 180px;
+}
+.contact_filter .form-group.inline .MuiFormGroup-root {
+  width: calc(100% - 180px);
+}
+.product_order_wrapper {
+  .form-group.inline {
+    span.label {
+      min-width: 110px;
+    }
+  }
+}
+
+.contact_source_wrapper {
+  max-width: 1150px;
+}
+
+.report_filter_wrap .btn_primary {
+  white-space: nowrap;
+  margin-bottom: 5px;
+}
+
+.drinks_sundries_wrap {
+  width: 100%;
+  max-width: 500px;
+}
+
+// .product_order_wrapper {
+//   max-width: 1000px;
+// }
+
+.event_number_filter_wrap {
+  max-width: 1160px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.comparision_report_wrap {
+  max-width: 1060px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.event_number_comp_report {
+  max-width: 720px;
+}

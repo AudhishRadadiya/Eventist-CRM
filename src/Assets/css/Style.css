@@ -1,0 +1,801 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* line 24, ../scss/Global/Reset.scss */
+body { font-family: 'Poppins', sans-serif; background-color: #f3f7fc; font-weight: 400; font-size: 14px; line-height: 21px; }
+
+/* line 32, ../scss/Global/Reset.scss */
+a { -webkit-transition: 0.5s ease; transition: 0.5s ease; text-decoration: none; color: #454545; font-family: 'Poppins', sans-serif !important; }
+
+/* line 39, ../scss/Global/Reset.scss */
+a:hover { color: #f54776; }
+
+/* line 43, ../scss/Global/Reset.scss */
+ul { margin: 0; padding: 0; list-style: none; }
+
+/* line 49, ../scss/Global/Reset.scss */
+.text_decoration { text-decoration: underline; }
+
+/* line 53, ../scss/Global/Reset.scss */
+.text_dark { color: #454545 !important; }
+
+/* line 56, ../scss/Global/Reset.scss */
+.text_light { color: #b9b9b9 !important; }
+
+/* line 59, ../scss/Global/Reset.scss */
+.text_primary { color: #f54776 !important; }
+
+/* line 62, ../scss/Global/Reset.scss */
+.text_white { color: #ffffff !important; }
+
+/* line 66, ../scss/Global/Reset.scss */
+h1 { font-size: 24px; line-height: 32px; font-weight: 600; }
+
+/* line 72, ../scss/Global/Reset.scss */
+h2 { font-size: 20px; line-height: 28px; font-weight: 600; }
+
+/* line 78, ../scss/Global/Reset.scss */
+h3 { font-weight: 600; font-size: 18px; line-height: 24px; }
+
+/* line 84, ../scss/Global/Reset.scss */
+h4 { font-weight: 500; font-size: 16px; line-height: 22px; }
+
+/* line 90, ../scss/Global/Reset.scss */
+h5 { font-weight: 500; font-size: 14px; line-height: 20px; }
+
+/* line 96, ../scss/Global/Reset.scss */
+h6 { font-weight: 400; font-size: 12px; line-height: 18px; }
+
+/* line 102, ../scss/Global/Reset.scss */
+p { font-weight: 400; font-size: 12px; line-height: 18px; color: #454545; font-family: 'Poppins', sans-serif; }
+
+/* line 110, ../scss/Global/Reset.scss */
+.fw_300 { font-weight: 300; }
+
+/* line 113, ../scss/Global/Reset.scss */
+.fw_400 { font-weight: 400; }
+
+/* line 116, ../scss/Global/Reset.scss */
+.fw_500 { font-weight: 500; }
+
+/* line 119, ../scss/Global/Reset.scss */
+.fw_600 { font-weight: 600; }
+
+/* line 122, ../scss/Global/Reset.scss */
+.fw_700 { font-weight: 700; }
+
+/* line 126, ../scss/Global/Reset.scss */
+.text_small { font-size: 12px; line-height: 18px; }
+
+/* line 131, ../scss/Global/Reset.scss */
+::-webkit-scrollbar { width: 6px; height: 6px; border-radius: 10px; }
+
+/* line 137, ../scss/Global/Reset.scss */
+::-webkit-scrollbar-track { background: #e6edef; }
+
+/* line 141, ../scss/Global/Reset.scss */
+::-webkit-scrollbar-thumb { background: #a1a1a1; border-radius: 10px; }
+
+/* line 146, ../scss/Global/Reset.scss */
+::-webkit-scrollbar-thumb:hover { background: -webkit-gradient(linear, left bottom, left top, from(#f54776), to(#f54776)); background: linear-gradient(0deg, #f54776, #f54776); }
+
+/* line 149, ../scss/Global/Reset.scss */
+:focus-visible { outline: 0; }
+
+/* line 1, ../scss/Global/Global.scss */
+.btn_border { background: #ffffff; color: #f54776 !important; border: 1px solid #f54776; padding: 10px 40px; font-weight: 500; font-size: 16px; border-radius: 10px; line-height: 24px; text-decoration: none !important; display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-transition: 0.4s ease; transition: 0.4s ease; }
+
+/* line 15, ../scss/Global/Global.scss */
+.btn_border.small { padding: 5px 12px; font-size: 12px; line-height: 18px; border-radius: 5px; }
+
+/* line 21, ../scss/Global/Global.scss */
+.btn_border:hover { background: -webkit-gradient(linear, left bottom, left top, from(#f54776), to(#f54776)); background: linear-gradient(0deg, #f54776, #f54776); color: #ffffff !important; border-color: #f54776; }
+
+/* line 26, ../scss/Global/Global.scss */
+.btn_border[disabled] { background: #eaeaea; border-color: #eaeaea; color: #b9b9b9 !important; }
+
+/* line 31, ../scss/Global/Global.scss */
+.btn_border img { -webkit-transition: 0.5s ease; transition: 0.5s ease; -webkit-filter: inherit; filter: inherit; }
+
+/* line 35, ../scss/Global/Global.scss */
+.btn_border:hover img { -webkit-filter: brightness(22); filter: brightness(22); }
+
+/* line 38, ../scss/Global/Global.scss */
+.btn_primary { background: -webkit-gradient(linear, left bottom, left top, from(#f54776), to(#f54776)); background: linear-gradient(0deg, #f54776, #f54776); color: #ffffff; border: 1px solid #f54776; padding: 10px 40px; font-weight: 500; font-size: 16px; border-radius: 10px; line-height: 24px; display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-transition: 0.4s ease; transition: 0.4s ease; }
+
+/* line 51, ../scss/Global/Global.scss */
+.btn_primary.small { padding: 5px 12px; font-size: 12px; line-height: 18px; border-radius: 5px; }
+
+/* line 57, ../scss/Global/Global.scss */
+.btn_primary:hover { background: #ffffff; color: #f54776; border-color: #f54776; }
+
+/* line 63, ../scss/Global/Global.scss */
+.btn_primary.small .MuiSvgIcon-root { font-size: 24px; }
+
+/* line 67, ../scss/Global/Global.scss */
+.btn_warning { background: transparent; color: #ff9922 !important; border: 1px solid #ff9922; padding: 5px 12px; font-size: 12px; line-height: 18px; border-radius: 5px; text-decoration: none !important; display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-transition: 0.4s ease; transition: 0.4s ease; }
+
+/* line 80, ../scss/Global/Global.scss */
+.btn_warning:hover { background: #ff9922; color: #ffffff !important; border-color: #ff9922; }
+
+/* line 86, ../scss/Global/Global.scss */
+.btn_danger { background: transparent; color: #de3957 !important; border: 1px solid #de3957; padding: 5px 12px; font-size: 12px; line-height: 18px; border-radius: 5px; text-decoration: none !important; display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-transition: 0.4s ease; transition: 0.4s ease; }
+
+/* line 99, ../scss/Global/Global.scss */
+.btn_danger:hover { background: #de3957; color: #ffffff !important; border-color: #de3957; }
+
+/* line 104, ../scss/Global/Global.scss */
+.btn_info { background: transparent; color: #2986da !important; border: 1px solid #2986da; padding: 5px 12px; font-size: 12px; line-height: 18px; border-radius: 5px; text-decoration: none !important; display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-transition: 0.4s ease; transition: 0.4s ease; }
+
+/* line 117, ../scss/Global/Global.scss */
+.btn_info:hover { background: #2986da; color: #ffffff !important; border-color: #2986da; }
+
+/* line 123, ../scss/Global/Global.scss */
+.btn_edit { width: 28px; height: 28px; background: #ecf6f0; border-radius: 50%; cursor: pointer; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; border: 0; }
+
+/* line 135, ../scss/Global/Global.scss */
+.btn_edit:hover, .btn_edit:focus { background: #38a169; }
+
+/* line 139, ../scss/Global/Global.scss */
+.btn_edit:hover img { -webkit-filter: brightness(22); filter: brightness(22); }
+
+/* line 143, ../scss/Global/Global.scss */
+.view_btn { background: #e5f0fa; width: 28px; height: 28px; border-radius: 50%; cursor: pointer; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; border: 0; }
+
+/* line 155, ../scss/Global/Global.scss */
+.view_btn:hover, .view_btn:focus { background: #2986da; }
+
+/* line 159, ../scss/Global/Global.scss */
+.view_btn:hover img { -webkit-filter: brightness(22); filter: brightness(22); }
+
+/* line 163, ../scss/Global/Global.scss */
+.btn_icon { width: 30px; height: 30px; background: #ffffff; border-radius: 5px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+/* line 173, ../scss/Global/Global.scss */
+.form-control { background: #ffffff; border: 1px solid #dadddf; -webkit-box-shadow: none !important; box-shadow: none !important; padding: 6px 10px; font-weight: 400; font-size: 12px; line-height: 18px; }
+
+/* line 183, ../scss/Global/Global.scss */
+.inner_wrapper { padding-right: 10px; }
+
+/* line 186, ../scss/Global/Global.scss */
+.main_wrapper header { height: 50px; position: fixed; top: 0; left: 0; width: 100%; background: #272727; padding: 10px 15px; z-index: 99; }
+
+/* line 196, ../scss/Global/Global.scss */
+.dashboard_content { display: -webkit-box; display: -ms-flexbox; display: flex; height: calc(100vh - 50px); padding: 15px; margin-top: 50px; }
+
+/* line 202, ../scss/Global/Global.scss */
+.dashboard_content .main_content { width: calc(100% - 350px); height: 100%; overflow-y: auto; overflow-x: hidden; padding-right: 10px; }
+
+/* line 209, ../scss/Global/Global.scss */
+.dashboard_content .search_panel { width: 350px; height: 100%; overflow-y: auto; overflow-x: hidden; padding-left: 10px; }
+
+/* line 216, ../scss/Global/Global.scss */
+.page_title { margin-bottom: 20px; background: #ffffff; -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05); box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05); border-radius: 10px; padding: 9px 15px; }
+
+/* line 223, ../scss/Global/Global.scss */
+.page_title h1 { font-weight: 600; font-size: 16px; line-height: 24px; color: #272727; margin: 0; padding: 3px 0; }
+
+/* line 232, ../scss/Global/Global.scss */
+.select_with_search .MuiAutocomplete-input { padding: 6.5px 15px !important; font-size: 12px; padding-right: 60px !important; }
+
+/* line 237, ../scss/Global/Global.scss */
+.select_with_search.css-l3ln04-MuiAutocomplete-root .MuiOutlinedInput-root { padding: 0; }
+
+/* line 243, ../scss/Global/Global.scss */
+.table_main_Wrapper .MuiPaper-root { background: transparent; -webkit-box-shadow: none; box-shadow: none; }
+
+/* line 247, ../scss/Global/Global.scss */
+.table_main_Wrapper .MuiPaper-root table { border-collapse: separate; border-spacing: 0 5px; white-space: nowrap; }
+
+/* line 252, ../scss/Global/Global.scss */
+.table_main_Wrapper .MuiPaper-root table thead tr th { border: 0; background: #454545; color: #ffffff; padding: 10px 15px; font-weight: 500; font-size: 12px; line-height: 18px; font-family: 'Poppins', sans-serif; }
+
+/* line 262, ../scss/Global/Global.scss */
+.table_main_Wrapper .MuiPaper-root table thead tr.full_row th { border-radius: 0; background: transparent; color: #454545; text-align: center; }
+
+/* line 268, ../scss/Global/Global.scss */
+.table_main_Wrapper .MuiPaper-root table thead tr th span { position: relative; }
+
+/* line 271, ../scss/Global/Global.scss */
+.table_main_Wrapper .MuiPaper-root table thead tr th span:before { content: ''; position: absolute; right: -14px; top: 1px; width: 8px; height: 13px; background: url(../Img/sort-arrow.svg); background-repeat: no-repeat; }
+
+/* line 281, ../scss/Global/Global.scss */
+.table_main_Wrapper .MuiPaper-root table thead tr th:first-child { border-radius: 10px 0 0 10px; }
+
+/* line 284, ../scss/Global/Global.scss */
+.table_main_Wrapper .MuiPaper-root table thead tr th:last-child { border-radius: 0 10px 10px 0; }
+
+/* line 288, ../scss/Global/Global.scss */
+.table_main_Wrapper .MuiPaper-root table tbody tr td { border: 0; font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 12px; line-height: 18px; background: #ffffff; padding: 10px; }
+
+/* line 298, ../scss/Global/Global.scss */
+.table_main_Wrapper .MuiPaper-root table tbody tr td:first-child { border-radius: 10px 0 0 10px; }
+
+/* line 301, ../scss/Global/Global.scss */
+.table_main_Wrapper .MuiPaper-root table tbody tr td:last-child { border-radius: 0 10px 10px 0; }
+
+/* line 304, ../scss/Global/Global.scss */
+.table_main_Wrapper .MuiPaper-root table tbody tr td a { color: #454545; text-decoration: underline; font-weight: 500; }
+
+/* line 309, ../scss/Global/Global.scss */
+.table_main_Wrapper .MuiPaper-root table tbody tr td a:hover { color: #f54776; }
+
+/* line 313, ../scss/Global/Global.scss */
+.table_main_Wrapper.vertical_top .MuiPaper-root table tbody tr td { vertical-align: top; }
+
+/* line 317, ../scss/Global/Global.scss */
+.table_main_Wrapper .MuiPaper-root table tbody tr td span { display: block; }
+
+/* line 322, ../scss/Global/Global.scss */
+.breadcrumb_wrap .MuiBreadcrumbs-root { margin: 0 0 15px; }
+
+/* line 326, ../scss/Global/Global.scss */
+.breadcrumb_wrap .MuiBreadcrumbs-ol .MuiBreadcrumbs-li a { font-weight: 600 !important; font-size: 14px !important; line-height: 22px !important; color: #454545; text-decoration: none; }
+
+/* line 334, ../scss/Global/Global.scss */
+.breadcrumb_wrap .MuiBreadcrumbs-ol .MuiBreadcrumbs-li a img { margin-top: -4px; }
+
+/* line 338, ../scss/Global/Global.scss */
+.breadcrumb_wrap .MuiBreadcrumbs-ol .MuiBreadcrumbs-li p { font-weight: 400 !important; font-size: 14px !important; line-height: 24px !important; }
+
+/* line 343, ../scss/Global/Global.scss */
+.breadcrumb_wrap .MuiBreadcrumbs-ol .MuiBreadcrumbs-li:first-child:before { display: none; }
+
+/* line 347, ../scss/Global/Global.scss */
+.search_wrapper_common { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; position: relative; }
+
+/* line 353, ../scss/Global/Global.scss */
+.search_wrapper_common .form-control { border: 1px solid #dadddf; border-radius: 5px; font-weight: 400; font-size: 12px; line-height: 18px; -webkit-box-shadow: none; box-shadow: none; }
+
+/* line 361, ../scss/Global/Global.scss */
+.search_wrapper_common .btn_primary.small { padding: 2px; position: absolute; right: 1px; top: 1px; border-radius: 0 4px 4px 0; }
+
+/* line 369, ../scss/Global/Global.scss */
+.MuiTextField-root .MuiInputBase-formControl { padding: 0 !important; }
+
+/* line 372, ../scss/Global/Global.scss */
+ul.pdf_link_wrap li { margin-bottom: 5px; }
+
+/* line 375, ../scss/Global/Global.scss */
+ul.pdf_link_wrap li a { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; text-decoration: none; }
+
+/* line 380, ../scss/Global/Global.scss */
+ul.pdf_link_wrap li a .pdf_icon { width: 40px; height: 40px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; background: #ffffff; -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.05); box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.05); border-radius: 5px; margin-right: 15px; }
+
+/* line 391, ../scss/Global/Global.scss */
+ul.pdf_link_wrap li a .pdf_icon img { -webkit-filter: grayscale(1); filter: grayscale(1); -webkit-transition: 0.5s ease; transition: 0.5s ease; }
+
+/* line 395, ../scss/Global/Global.scss */
+ul.pdf_link_wrap li a:hover .pdf_icon img { -webkit-filter: grayscale(0); filter: grayscale(0); }
+
+/* line 398, ../scss/Global/Global.scss */
+ul.pdf_link_wrap li .pdf_text p { font-weight: 500; font-size: 12px; line-height: 18px; color: #454545; margin: 0; -webkit-transition: 0.5s ease; transition: 0.5s ease; }
+
+/* line 407, ../scss/Global/Global.scss */
+ul.pdf_link_wrap li a:hover .pdf_text p { color: #f54776; }
+
+/* line 411, ../scss/Global/Global.scss */
+.sitemap_wrap ul li { display: block; }
+
+/* line 415, ../scss/Global/Global.scss */
+.sitemap_wrap ul li a { color: #f54776; }
+
+/* line 421, ../scss/Global/Global.scss */
+.date_picker .MuiFormControl-root .MuiInputBase-input { font-size: 12px; padding: 6px 10px; }
+
+/* line 426, ../scss/Global/Global.scss */
+.date_picker .MuiFormControl-root .MuiInputAdornment-root .MuiIconButton-root { padding: 0; margin-right: 6px; }
+
+/* line 431, ../scss/Global/Global.scss */
+.date_picker .MuiFormControl-root { width: 100%; }
+
+/* line 434, ../scss/Global/Global.scss */
+.date_picker .MuiFormControl-root .MuiInputAdornment-root .MuiIconButton-root svg { display: none; }
+
+/* line 441, ../scss/Global/Global.scss */
+.date_picker .MuiFormControl-root .MuiInputAdornment-root .MuiIconButton-root { position: relative; width: 20px; height: 20px; }
+
+/* line 447, ../scss/Global/Global.scss */
+.date_picker .MuiFormControl-root .MuiInputAdornment-root .MuiIconButton-root:before { content: ''; position: absolute; left: 0; top: 0; width: 18px; height: 18px; background: url(../Img/calender.svg); }
+
+/* line 460, ../scss/Global/Global.scss */
+.MuiPickersPopper-root .MuiPaper-root { border: 1px solid #dadddf; -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05); box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05); border-radius: 5px; }
+
+/* line 466, ../scss/Global/Global.scss */
+.MuiPickersCalendarHeader-root .MuiPickersCalendarHeader-label { font-weight: 600; font-size: 14px; }
+
+/* line 471, ../scss/Global/Global.scss */
+.MuiPickersArrowSwitcher-root .MuiPickersArrowSwitcher-spacer { width: 0; }
+
+/* line 474, ../scss/Global/Global.scss */
+.MuiDayPicker-header span.MuiTypography-root { font-weight: 600; font-size: 14px; color: #454545; }
+
+/* line 479, ../scss/Global/Global.scss */
+.MuiDayPicker-weekContainer button.MuiPickersDay-root { font-weight: 600; font-size: 14px; color: #666; }
+
+/* line 484, ../scss/Global/Global.scss */
+.MuiDayPicker-weekContainer button.MuiPickersDay-root.Mui-selected, .MuiYearPicker-root .PrivatePickersYear-root .PrivatePickersYear-yearButton.Mui-selected { background: -webkit-gradient(linear, left bottom, left top, from(#f54776), to(#f54776)); background: linear-gradient(0deg, #f54776, #f54776); color: #fff; }
+
+/* line 493, ../scss/Global/Global.scss */
+.MuiTabs-root .MuiTabs-flexContainer .MuiTab-root { font-weight: 600; font-size: 16px; line-height: 24px; text-transform: capitalize; }
+
+/* line 499, ../scss/Global/Global.scss */
+.MuiTabs-root .MuiTabs-flexContainer .MuiTab-root.Mui-selected { color: #f54776; }
+
+/* line 502, ../scss/Global/Global.scss */
+.MuiTabs-root .MuiTabs-scroller .MuiTabs-indicator { background-color: #f54776; height: 3px; border-radius: 4px; }
+
+/* line 507, ../scss/Global/Global.scss */
+.MuiTabPanel-root { padding: 20px 0 0 !important; }
+
+/* line 510, ../scss/Global/Global.scss */
+.select_wrap { background: #ffffff; }
+
+/* line 516, ../scss/Global/Global.scss */
+.MuiSwitch-root .MuiSwitch-thumb { background: #b9b9b9; -webkit-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1); box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1); }
+
+/* line 520, ../scss/Global/Global.scss */
+.MuiSwitch-root .MuiButtonBase-root.Mui-checked + .MuiSwitch-track { background-color: #f6bbcb; }
+
+/* line 523, ../scss/Global/Global.scss */
+.MuiSwitch-root .MuiSwitch-track { background: #dadddf; border-radius: 5px; opacity: 1 !important; border-radius: 30px; }
+
+/* line 529, ../scss/Global/Global.scss */
+.MuiSwitch-root .Mui-checked .MuiSwitch-thumb { background: -webkit-gradient(linear, left bottom, left top, from(#f54776), to(#f54776)); background: linear-gradient(0deg, #f54776, #f54776); }
+
+/* line 533, ../scss/Global/Global.scss */
+.MuiSwitch-root .Mui-checked + .MuiSwitch-track { background-color: #f6bbcb; }
+
+/* line 537, ../scss/Global/Global.scss */
+.action_wrap { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+/* line 542, ../scss/Global/Global.scss */
+.action_wrap li { padding-left: 15px; }
+
+/* line 1, ../scss/Global/Header.scss */
+.left_menu { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+/* line 6, ../scss/Global/Header.scss */
+.left_menu .menu_wrap { padding-left: 25px; }
+
+/* line 9, ../scss/Global/Header.scss */
+.menu_wrap > ul { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+/* line 13, ../scss/Global/Header.scss */
+.menu_wrap > ul > li { padding: 0 15px; }
+
+/* line 16, ../scss/Global/Header.scss */
+.menu_wrap > ul > li:last-child { padding-left: 0; }
+
+/* line 20, ../scss/Global/Header.scss */
+.menu_wrap > ul > li > a { color: #b9b9b9; }
+
+/* line 23, ../scss/Global/Header.scss */
+.menu_wrap > ul > li > a.btn_border { color: #f54776; }
+
+/* line 26, ../scss/Global/Header.scss */
+.menu_wrap > ul > li > a.btn_border:hover { color: #ffffff; }
+
+/* line 30, ../scss/Global/Header.scss */
+.menu_wrap > ul > li > a img { -webkit-filter: grayscale(1) invert(1); filter: grayscale(1) invert(1); }
+
+/* line 33, ../scss/Global/Header.scss */
+.menu_wrap > ul > li > a:hover img, .menu_wrap > ul > li > a.active img { -webkit-filter: inherit; filter: inherit; }
+
+/* line 38, ../scss/Global/Header.scss */
+.menu_wrap > ul > li > a:hover, .menu_wrap > ul > li > a.active { color: #f54776; }
+
+/* line 43, ../scss/Global/Header.scss */
+.search_wrap { position: relative; }
+
+/* line 47, ../scss/Global/Header.scss */
+.search_wrap .form-control { width: 220px; background: transparent; border: 1px solid #454545; border-radius: 5px; -webkit-box-shadow: none; box-shadow: none; font-weight: 400; font-size: 12px; color: #ffffff; }
+
+/* line 57, ../scss/Global/Header.scss */
+.search_wrap .btn_primary.small { position: absolute; right: 1px; top: 1px; padding: 2px 5px; border-radius: 0px 5px 5px 0px; }
+
+/* line 65, ../scss/Global/Header.scss */
+.right_menu > ul { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: end; }
+
+/* line 71, ../scss/Global/Header.scss */
+.right_menu > ul > li { padding: 0 15px; color: #ffffff; }
+
+/* line 75, ../scss/Global/Header.scss */
+.right_menu > ul > li span { color: #f54776; }
+
+/* line 79, ../scss/Global/Header.scss */
+.right_menu > ul > li > a { color: #b9b9b9; }
+
+/* line 82, ../scss/Global/Header.scss */
+.right_menu > ul > li > a:hover { color: #f54776; }
+
+/* line 86, ../scss/Global/Header.scss */
+.menu_wrap > ul > li button.MuiButtonBase-root { padding: 0; color: #b9b9b9; text-transform: capitalize; font-size: 14px; font-weight: 400; }
+
+/* line 94, ../scss/Global/Header.scss */
+.dropdown-menu li { position: relative; }
+
+/* line 97, ../scss/Global/Header.scss */
+.dropdown-menu .submenu { display: none; position: absolute; left: 100%; top: 0 !important; }
+
+/* line 103, ../scss/Global/Header.scss */
+.dropdown-menu .submenu-left { right: 100%; left: auto; }
+
+/* line 108, ../scss/Global/Header.scss */
+.dropdown-menu > li:hover { background-color: #f1f1f1; }
+
+/* line 111, ../scss/Global/Header.scss */
+.dropdown-menu > li:hover > .submenu { display: block; }
+
+/* line 115, ../scss/Global/Header.scss */
+.right_menu .dropdown-toggle:after { display: none; }
+
+/* line 118, ../scss/Global/Header.scss */
+.dropdown-menu { background: #ffffff; border: 1px solid #dadddf; -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05); box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05); border-radius: 5px; padding: 0; top: 11px !important; }
+
+/* line 127, ../scss/Global/Header.scss */
+.dropdown-menu li .dropdown-item { font-weight: 400; font-size: 12px; line-height: 18px; padding: 6px 10px; }
+
+/* line 133, ../scss/Global/Header.scss */
+.dropdown-menu li .dropdown-item:hover { background: #fcecef; }
+
+/* line 137, ../scss/Global/Header.scss */
+.megamenu_wrap .MuiPaper-root { -webkit-transform: translate(0, 12px) !important; transform: translate(0, 12px) !important; }
+
+/* line 141, ../scss/Global/Header.scss */
+.megamenu_wrap ul.MuiList-root .row .col { border-right: 1px solid #dadddf; }
+
+/* line 1, ../scss/Global/SearchPanel.scss */
+.search_panel_wrapper { background: #ffffff; border-radius: 15px; padding: 5px; }
+
+/* line 6, ../scss/Global/SearchPanel.scss */
+.css-uvvswg-MuiButtonBase-root-MuiAccordionSummary-root { background: #f3f7fc; border-radius: 10px; }
+
+/* line 10, ../scss/Global/SearchPanel.scss */
+.search_panel_wrapper .MuiPaper-root:last-child { margin-top: 5px; }
+
+/* line 13, ../scss/Global/SearchPanel.scss */
+.MuiAccordionSummary-expandIconWrapper { width: 30px; height: 30px; background: #b9b9b9; border-radius: 5px; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-transform: rotate(90deg) !important; transform: rotate(90deg) !important; }
+
+/* line 22, ../scss/Global/SearchPanel.scss */
+.MuiAccordionSummary-expandIconWrapper svg { fill: #fff; }
+
+/* line 26, ../scss/Global/SearchPanel.scss */
+.Mui-expanded .MuiAccordionSummary-expandIconWrapper { background: -webkit-gradient(linear, left bottom, left top, from(#f54776), to(#f54776)); background: linear-gradient(0deg, #f54776, #f54776); -webkit-transform: rotate(270deg) !important; transform: rotate(270deg) !important; }
+
+/* line 31, ../scss/Global/SearchPanel.scss */
+.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.MuiSelect-select { font-weight: 400; font-size: 12px; line-height: 18px; padding: 6px 26px 6px 14px !important; font-family: 'Poppins', sans-serif !important; }
+
+/* line 38, ../scss/Global/SearchPanel.scss */
+.css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root.Mui-focused .MuiOutlinedInput-notchedOutline { border-color: #dadddf !important; border-width: 1px !important; }
+
+/* line 43, ../scss/Global/SearchPanel.scss */
+.css-1d3z3hw-MuiOutlinedInput-notchedOutline { border-color: #dadddf !important; }
+
+/* line 46, ../scss/Global/SearchPanel.scss */
+.css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper { border: 1px solid #dadddf; -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05) !important; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05) !important; border-radius: 5px !important; }
+
+/* line 52, ../scss/Global/SearchPanel.scss */
+.css-6hp17o-MuiList-root-MuiMenu-list { padding-top: 0 !important; padding-bottom: 0 !important; }
+
+/* line 56, ../scss/Global/SearchPanel.scss */
+.css-1czbeqn-MuiButtonBase-root-MuiMenuItem-root.Mui-selected { background-color: #feedf1 !important; }
+
+/* line 59, ../scss/Global/SearchPanel.scss */
+.css-1czbeqn-MuiButtonBase-root-MuiMenuItem-root.Mui-selected:hover { background-color: #feedf1 !important; }
+
+/* line 62, ../scss/Global/SearchPanel.scss */
+.css-1czbeqn-MuiButtonBase-root-MuiMenuItem-root:hover { background-color: #f7f7f7 !important; }
+
+/* line 65, ../scss/Global/SearchPanel.scss */
+.select_wrap svg, .Multiselect_checkbox svg { display: none; }
+
+/* line 69, ../scss/Global/SearchPanel.scss */
+.select_wrap, .Multiselect_checkbox { position: relative; }
+
+/* line 73, ../scss/Global/SearchPanel.scss */
+.select_wrap:before, .Multiselect_checkbox:before { content: ''; position: absolute; right: 10px; top: 12px; width: 13px; height: 7px; background: url(../Img/down-arrow-gray.svg); }
+
+/* line 83, ../scss/Global/SearchPanel.scss */
+.small_select .select_wrap:before, .small_select .Multiselect_checkbox:before { display: none; }
+
+/* line 87, ../scss/Global/SearchPanel.scss */
+.small_select .css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.MuiSelect-select { padding: 6px 14px 6px 14px !important; }
+
+/* line 91, ../scss/Global/SearchPanel.scss */
+.form-group { margin: 0 0 10px; }
+
+/* line 94, ../scss/Global/SearchPanel.scss */
+.form-group span.label { font-weight: 500; font-size: 12px; line-height: 18px; color: #454545; }
+
+/* line 100, ../scss/Global/SearchPanel.scss */
+.form-group.inline { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 30px; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+/* line 105, ../scss/Global/SearchPanel.scss */
+.form-group.inline span.label { width: auto; margin-right: 10px; margin-top: 3px; min-width: 65px; }
+
+/* line 111, ../scss/Global/SearchPanel.scss */
+.form-group.inline.checkbox_wrap span.label { margin-top: 0; }
+
+/* line 114, ../scss/Global/SearchPanel.scss */
+.form-group.inline .MuiFormGroup-root { width: calc(100% - 75px); }
+
+/* line 117, ../scss/Global/SearchPanel.scss */
+.css-14rppop-MuiAccordionDetails-root { padding: 10px 0 !important; }
+
+/* line 120, ../scss/Global/SearchPanel.scss */
+.css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper { -webkit-transform: translate(0, -30px) !important; transform: translate(0, -30px) !important; }
+
+/* line 123, ../scss/Global/SearchPanel.scss */
+.css-1czbeqn-MuiButtonBase-root-MuiMenuItem-root.Mui-disabled { opacity: 1 !important; background: #fff !important; }
+
+/* line 127, ../scss/Global/SearchPanel.scss */
+.Mui-expanded .advance_filter_wrap .MuiPaper-root .MuiAccordionSummary-expandIconWrapper { width: auto; height: auto; background: transparent !important; }
+
+/* line 135, ../scss/Global/SearchPanel.scss */
+.Mui-expanded .advance_filter_wrap .MuiPaper-root .MuiAccordionSummary-expandIconWrapper svg { fill: #454545; -webkit-transform: rotate(180deg); transform: rotate(180deg); }
+
+/* line 143, ../scss/Global/SearchPanel.scss */
+.advance_filter_wrap .MuiButtonBase-root { min-height: auto !important; }
+
+/* line 147, ../scss/Global/SearchPanel.scss */
+.advance_filter_wrap .css-1betqn-MuiAccordionSummary-content { margin: 6px 0 !important; }
+
+/* line 155, ../scss/Global/SearchPanel.scss */
+.css-ahj2mt-MuiTypography-root { font-weight: 500 !important; }
+
+/* line 158, ../scss/Global/SearchPanel.scss */
+.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root { padding: 0 5px 0 0 !important; }
+
+/* line 162, ../scss/Global/SearchPanel.scss */
+.MuiCheckbox-root .MuiSvgIcon-root { display: none; }
+
+/* line 165, ../scss/Global/SearchPanel.scss */
+.MuiButtonBase-root.MuiCheckbox-root { padding-left: 20px !important; position: relative; }
+
+/* line 170, ../scss/Global/SearchPanel.scss */
+.MuiButtonBase-root.MuiCheckbox-root:before { content: ''; position: absolute; left: 0; top: -9px; border: 1px solid #b9b9b9; border-radius: 3px; width: 18px; height: 18px; }
+
+/* line 180, ../scss/Global/SearchPanel.scss */
+.MuiButtonBase-root.MuiCheckbox-root.Mui-checked:before { border-color: #f54776; }
+
+/* line 183, ../scss/Global/SearchPanel.scss */
+.MuiButtonBase-root.MuiCheckbox-root:after { position: absolute; content: ''; left: 3px; top: -5px; width: 12px; height: 10px; background: url(../Img/check.svg); display: none; }
+
+/* line 194, ../scss/Global/SearchPanel.scss */
+.MuiButtonBase-root.MuiCheckbox-root.Mui-checked:after { display: block; }
+
+/* line 201, ../scss/Global/SearchPanel.scss */
+.css-j204z7-MuiFormControlLabel-root { margin-left: 0 !important; }
+
+/* line 205, ../scss/Global/SearchPanel.scss */
+.form-group .input_wrap { -webkit-box-orient: horizontal !important; -webkit-box-direction: normal !important; -ms-flex-direction: row !important; flex-direction: row !important; }
+
+/* line 208, ../scss/Global/SearchPanel.scss */
+.form-group .input_wrap .large_select { width: calc(100% - 75px); }
+
+/* line 211, ../scss/Global/SearchPanel.scss */
+.form-group .input_wrap .small_select { width: 75px; padding-left: 10px; }
+
+/* line 215, ../scss/Global/SearchPanel.scss */
+.MuiInputBase-root .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input { padding: 6px 14px 6px 14px !important; }
+
+/* line 218, ../scss/Global/SearchPanel.scss */
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+
+/* line 223, ../scss/Global/SearchPanel.scss */
+input[type='number'] { -moz-appearance: textfield; }
+
+/* line 227, ../scss/Global/SearchPanel.scss */
+.inline_checkbox_wrap.css-dmmspl-MuiFormGroup-root { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; }
+
+/* line 230, ../scss/Global/SearchPanel.scss */
+.advance_filter_inner, .search_result_wrap { height: calc(100vh - 340px); overflow: auto; }
+
+/* line 236, ../scss/Global/SearchPanel.scss */
+.save_search_wrap { height: calc(100vh - 215px); overflow: auto; }
+
+/* line 241, ../scss/Global/SearchPanel.scss */
+.Multiselect_checkbox { width: 100% !important; }
+
+/* line 244, ../scss/Global/SearchPanel.scss */
+.MuiFormControl-root.css-dpjnhs-MuiInputBase-root-MuiOutlinedInput-root { padding: 0; }
+
+/* line 247, ../scss/Global/SearchPanel.scss */
+.css-1sqnrkk-MuiInputBase-input-MuiOutlinedInput-input { padding: 6px 14px 6px 14px !important; }
+
+/* line 1, ../scss/Home/Home.scss */
+.bg_white_box { background: #ffffff; border-radius: 10px; }
+
+/* line 5, ../scss/Home/Home.scss */
+.dashboard_top_wrap .form-group.inline span.label { width: 100px; }
+
+/* line 8, ../scss/Home/Home.scss */
+.dashboard_top_wrap .form-group.inline .MuiFormGroup-root, .dashboard_top_wrap .form-group.inline .MuiAutocomplete-root { width: calc(100% - 100px); }
+
+/* line 13, ../scss/Home/Home.scss */
+.MuiAutocomplete-paper .MuiAutocomplete-listbox li.MuiAutocomplete-option { font-size: 12px !important; font-family: 'Poppins', sans-serif !important; }
+
+/* line 17, ../scss/Home/Home.scss */
+.MuiAutocomplete-paper .MuiAutocomplete-listbox li.MuiAutocomplete-option:hover { color: #f54776; }
+
+/* line 22, ../scss/Home/Home.scss */
+.select_with_search .MuiAutocomplete-inputRoot .MuiAutocomplete-popupIndicator { background: #f54776; border-radius: 0 5px 5px 0; right: -6px; position: relative; width: 29px; height: 29px; }
+
+/* line 30, ../scss/Home/Home.scss */
+.select_with_search .MuiAutocomplete-inputRoot .MuiAutocomplete-popupIndicator:before { content: ''; position: absolute; left: 50%; top: 50%; width: 15px; height: 8px; background: url(../Img/down-arrow.svg); -webkit-filter: brightness(55); filter: brightness(55); background-repeat: no-repeat; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+
+/* line 44, ../scss/Home/Home.scss */
+.select_with_search .MuiAutocomplete-inputRoot .MuiAutocomplete-popupIndicator svg { display: none; }
+
+/* line 51, ../scss/Home/Home.scss */
+.dashboard_top_wrap_right .form-group.inline span.label { width: 150px; }
+
+/* line 55, ../scss/Home/Home.scss */
+.dashboard_top_wrap_right .form-group.inline .MuiFormGroup-root { width: calc(100% - 150px); }
+
+/* line 59, ../scss/Home/Home.scss */
+.dashboard_bottom_wrap { border-top: 1px solid #dadddf; }
+
+/* line 63, ../scss/Home/Home.scss */
+.resolution_note_wrap .MuiFormControl-root.MuiTextField-root { width: 100%; }
+
+/* line 67, ../scss/Home/Home.scss */
+.pagination_wrap .MuiPagination-root ul.MuiPagination-ul { -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
+
+/* line 71, ../scss/Home/Home.scss */
+.pagination_wrap .MuiPagination-root ul.MuiPagination-ul li button { background: #fff; font-size: 12px; line-height: 20px; font-weight: 500; color: #b9b9b9; }
+
+/* line 79, ../scss/Home/Home.scss */
+.pagination_wrap .MuiPagination-root ul.MuiPagination-ul li button.Mui-selected { color: #f54776; }
+
+/* line 87, ../scss/Home/Home.scss */
+.total_entry p { color: #b9b9b9; }
+
+/* line 91, ../scss/Home/Home.scss */
+.note_danger { background: #fcecef; display: inline-block; padding: 6px 10px; border-radius: 5px; color: #f54776; font-weight: 400; font-size: 12px; line-height: 18px; }
+
+/* line 101, ../scss/Home/Home.scss */
+.note_danger img { margin-left: 20px; }
+
+/* line 105, ../scss/Home/Home.scss */
+.number_comparision { max-width: 1100px; }
+
+/* line 1, ../scss/Parties/Parties.scss */
+.table_main_Wrapper .MuiPaper-root table tbody tr td span.hold_day { display: inline-block; color: #f54776; }
+
+/* line 6, ../scss/Parties/Parties.scss */
+.table_main_Wrapper .MuiPaper-root table tbody tr td span.total_available { display: inline-block; color: #b9b9b9; }
+
+/* line 10, ../scss/Parties/Parties.scss */
+.status_wrap { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+/* line 15, ../scss/Parties/Parties.scss */
+.status_wrap span { max-width: 200px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; color: #f54776; }
+
+/* line 23, ../scss/Parties/Parties.scss */
+.edit_wrap img { width: 28px; height: 28px; background: #ecf6f0; -o-object-fit: none; object-fit: none; border-radius: 50%; margin-right: 5px; cursor: pointer; }
+
+/* line 33, ../scss/Parties/Parties.scss */
+.table_main_Wrapper .MuiPaper-root table tbody tr.disabled_row td { color: #b9b9b9; }
+
+/* line 37, ../scss/Parties/Parties.scss */
+ul.pdf_link_wrap.rtl_dir li a { -webkit-box-orient: horizontal; -webkit-box-direction: reverse; -ms-flex-direction: row-reverse; flex-direction: row-reverse; }
+
+/* line 40, ../scss/Parties/Parties.scss */
+ul.pdf_link_wrap.rtl_dir li a .pdf_icon { margin-right: 0; margin-left: 15px; }
+
+/* line 45, ../scss/Parties/Parties.scss */
+.add_new_booking_wrap .email_wrap { border-radius: 10px; background: #f1f1f1; padding: 25px 30px; max-width: 1000px; }
+
+/* line 51, ../scss/Parties/Parties.scss */
+.add_new_booking_wrap .email_wrap .form-group { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; max-width: 500px; }
+
+/* line 57, ../scss/Parties/Parties.scss */
+.add_new_booking_wrap .email_wrap .form-group .form-control { border: 1px solid #dadddf; border-radius: 10px; font-weight: 400; font-size: 14px; line-height: 22px; padding: 11px 20px; -webkit-box-shadow: none; box-shadow: none; }
+
+/* line 66, ../scss/Parties/Parties.scss */
+.add_new_booking_wrap .email_wrap .form-group .input_wrap { margin-right: 20px; width: 100%; position: relative; }
+
+/* line 71, ../scss/Parties/Parties.scss */
+.add_new_booking_wrap .email_wrap .form-group .input_wrap small { position: absolute; left: 0; bottom: -22px; color: #b9b9b9; font-weight: 400; }
+
+/* line 79, ../scss/Parties/Parties.scss */
+.location_event_data_wrap .MuiAccordion-root { background-color: transparent; margin: 0 0 10px; }
+
+/* line 84, ../scss/Parties/Parties.scss */
+.location_event_data_wrap .MuiAccordionSummary-root { padding: 0; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; min-height: auto; }
+
+/* line 89, ../scss/Parties/Parties.scss */
+.location_event_data_wrap .MuiAccordionSummary-root .MuiAccordionSummary-content { margin: 0; }
+
+/* line 95, ../scss/Parties/Parties.scss */
+.location_event_data_wrap .MuiAccordionSummary-root p.MuiTypography-root { font-weight: 600 !important; font-size: 16px !important; line-height: 24px !important; }
+
+/* line 101, ../scss/Parties/Parties.scss */
+.edit_wrap { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+/* line 1, ../scss/Bookings/Bookings.scss */
+.select_event .form-group .MuiAutocomplete-root { width: 60%; background: #ffffff; }
+
+/* line 6, ../scss/Bookings/Bookings.scss */
+.top_filter_wrap ul { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+/* line 10, ../scss/Bookings/Bookings.scss */
+.top_filter_wrap ul li { -webkit-box-flex: 1; -ms-flex: auto; flex: auto; padding: 0 10px; }
+
+/* line 14, ../scss/Bookings/Bookings.scss */
+.top_filter_wrap ul li .form-group.inline span.label { min-width: auto; white-space: nowrap; }
+
+/* line 18, ../scss/Bookings/Bookings.scss */
+.form-group.checkbox_wrap .MuiFormControlLabel-root .MuiFormControlLabel-label { white-space: nowrap; }
+
+/* line 21, ../scss/Bookings/Bookings.scss */
+.table_main_Wrapper .MuiPaper-root table tbody tr td .inner_table span { display: inline-block; }
+
+/* line 24, ../scss/Bookings/Bookings.scss */
+.inner_table { padding: 5px 10px; border: 1px solid #dadddf; border-radius: 5px; background: #f3f7fc; }
+
+/* line 30, ../scss/Bookings/Bookings.scss */
+.table_main_Wrapper .MuiPaper-root table tbody tr td .inner_table td { vertical-align: middle; }
+
+@media (max-height: 500px) { /* line 35, ../scss/Bookings/Bookings.scss */
+  .latest_booking_wrap .table_main_Wrapper > .MuiPaper-root { height: 500px; } }
+@media (min-height: 500px) { /* line 41, ../scss/Bookings/Bookings.scss */
+  .latest_booking_wrap .table_main_Wrapper > .MuiPaper-root { height: calc(100vh - 325px); } }
+/* line 46, ../scss/Bookings/Bookings.scss */
+.table_main_Wrapper > .MuiPaper-root > table > thead > tr { position: -webkit-sticky; position: sticky; top: 0; z-index: 99; }
+
+/* line 52, ../scss/Bookings/Bookings.scss */
+.owner_select { margin-left: 40px; }
+
+/* line 56, ../scss/Bookings/Bookings.scss */
+.owner_select .MuiFormControl-root { min-width: 250px; }
+
+/* line 60, ../scss/Bookings/Bookings.scss */
+.right_booking_detail ul { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: end; padding-right: 15px; }
+
+/* line 67, ../scss/Bookings/Bookings.scss */
+.right_booking_detail ul li { color: #f54776; font-weight: 500; font-size: 12px; line-height: 18px; padding-left: 35px; }
+
+/* line 75, ../scss/Bookings/Bookings.scss */
+.card_wrapper .card_header { background: #454545; border-radius: 10px 10px 0px 0px; }
+
+/* line 80, ../scss/Bookings/Bookings.scss */
+.card_body { background: #ffffff; padding: 5px; border-radius: 0 0 10px 10px; }
+
+/* line 86, ../scss/Bookings/Bookings.scss */
+.card_body > ul > li { background: #f1f1f1; padding: 7px 15px; border-radius: 10px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-bottom: 5px; }
+
+/* line 95, ../scss/Bookings/Bookings.scss */
+.card_body > ul > li label { width: 190px; font-weight: 500; font-size: 12px; line-height: 18px; padding: 6px 0; }
+
+/* line 102, ../scss/Bookings/Bookings.scss */
+.card_body > ul > li .right_content { width: calc(100% - 190px); }
+
+/* line 106, ../scss/Bookings/Bookings.scss */
+.card_wrapper .card_footer { padding-top: 10px; }
+
+/* line 109, ../scss/Bookings/Bookings.scss */
+.card_wrapper .card_footer ul li { padding-left: 20px; }
+
+/* line 113, ../scss/Bookings/Bookings.scss */
+.booking_right_head ul { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: end; margin-bottom: 10px; }
+
+/* line 119, ../scss/Bookings/Bookings.scss */
+.booking_right_head ul li { margin-left: 20px; }
+
+/* line 123, ../scss/Bookings/Bookings.scss */
+.note_top_button_wrap .select_wrap { min-width: 170px; }
+
+/* line 127, ../scss/Bookings/Bookings.scss */
+.note_top_button_wrap { border-bottom: 1px solid #dadddf; }
+
+/* line 131, ../scss/Bookings/Bookings.scss */
+.note_table_wrap .table_main_Wrapper { border: 1px solid #dadddf; border-radius: 5px; background: #f3f7fc; padding: 0 5px; }
+
+/* line 138, ../scss/Bookings/Bookings.scss */
+.action_icon { -webkit-filter: grayscale(1); filter: grayscale(1); }
+
+/* line 141, ../scss/Bookings/Bookings.scss */
+.action_icon.disabled { opacity: 0.5; }
+
+/*# sourceMappingURL=Style.css.map */

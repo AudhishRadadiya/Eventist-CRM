@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkeventist_crm=self.webpackChunkeventist_crm||[]).push([[5407],{55407:function(e,n,r){r.r(n),r.d(n,{default:function(){return a}});var s=r(5083),t=r(72791),c=r(16030),i=r(35468),u=r(80184);function a(){var e=(0,c.I0)();return(0,t.useEffect)((function(){e((0,i.Se)())}),[]),(0,u.jsxs)("div",{className:"inner_wrapper",children:[(0,u.jsx)("div",{className:"page_title",children:(0,u.jsx)("h1",{children:"Current Bookings"})}),(0,u.jsx)(s.Z,{})]})}}}]);
+//# sourceMappingURL=5407.c7a215a8.chunk.js.map

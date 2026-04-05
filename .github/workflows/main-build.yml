@@ -1,0 +1,27 @@
+name: CI/CD - main-crm
+
+on:
+  push:
+    branches: [ "main-build" ]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "18"
+
+      - name: Deploy to server
+        uses: appleboy/ssh-action@master
+        with:
+          key: ${{ secrets.LIVE_AWS_SSH_KEY }}
+          host: ${{ secrets.LIVE_SSH_HOST }}
+          username: ${{ secrets.LIVE_SSH_USERNAME }}
+          script: |
+            cd /var/www/html/crm/Eventist-CRM
+            git pull origin main-build

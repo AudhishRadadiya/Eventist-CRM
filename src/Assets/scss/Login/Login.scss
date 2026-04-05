@@ -1,0 +1,64 @@
+.login_wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background: url('../../Img/login-bg.jpg');
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+  .login_inner {
+    width: 100%;
+    max-width: 670px;
+    margin: auto;
+    height: 100%;
+    .logo_wrap {
+      text-align: center;
+    }
+    .login_box {
+      border: 2px solid $primary;
+      border-radius: 15px;
+      background: rgba(0, 0, 0, 0.65);
+      padding: 50px 80px;
+      h1,
+      p {
+        text-align: center;
+        color: #fff;
+      }
+      .form-group {
+        margin: 0 0 25px;
+        label {
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 24px;
+          color: #fff;
+          margin: 0 0 10px;
+          display: block;
+        }
+        .MuiFormControl-root {
+          width: 100%;
+          .MuiInputBase-root {
+            border-radius: 10px;
+            .MuiInputBase-input {
+              padding: 16px 16px 16px 14px !important;
+              border-radius: 10px;
+            }
+          }
+        }
+      }
+      .note_wrap {
+        margin: 0 0 30px;
+        p {
+          text-align: left;
+          color: $textLight;
+        }
+        h6 {
+          color: $primary;
+          margin: 0;
+        }
+      }
+    }
+  }
+}

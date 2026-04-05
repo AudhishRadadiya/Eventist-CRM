@@ -1,0 +1,622 @@
+.required {
+  color: $primary;
+}
+
+.coupons_available ul {
+  max-width: 970px;
+}
+
+// .coupons_available ul li .form-group.inline {
+//   margin: 0;
+// }
+
+.coupons_available span {
+  display: inline-block;
+  font-size: 13px;
+  line-height: 18px;
+  cursor: pointer;
+}
+
+.inner_date_wrap .available_selectall {
+  color: inherit;
+}
+
+.inner_date_wrap .inline_checkbox_wrap.css-dmmspl-MuiFormGroup-root {
+  margin-bottom: 10px;
+}
+
+.inner_date_wrap {
+  margin-left: 25px;
+}
+
+.available_selectall span {
+  padding: 0 12px;
+}
+
+.inner_date_wrap .available_selectall span:hover {
+  color: $primary;
+  cursor: pointer;
+}
+.inner_date_wrap .available_selectall label:hover {
+  color: $primary;
+  cursor: pointer;
+}
+
+.available_selectall .inner_select_span {
+  border-right: 1px solid $textLight;
+  padding-left: 0;
+}
+
+.vertical_top_tr {
+  vertical-align: top !important;
+}
+
+.custom_radio .MuiButtonBase-root.MuiRadio-colorPrimary {
+  color: $textLight;
+}
+.custom_radio .MuiButtonBase-root.MuiRadio-colorPrimary.Mui-checked {
+  color: $primary;
+}
+
+.custom_radio .MuiButtonBase-root.MuiRadio-colorPrimary:hover {
+  background-color: rgb(245 71 118 / 4%);
+}
+
+.card_wrapper .admin_card_body > ul > li {
+  display: block;
+}
+.card_wrapper .admin_card_body > ul > li > .row {
+  align-items: center;
+}
+
+.admin_card_body ul li .card_content_left label {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  padding: 6px 0;
+}
+.card_content_left label {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  padding: 6px 0;
+}
+
+.card_body > ul > li.vertical_top {
+  align-items: start;
+}
+
+.card_body > ul > li.vertical_top label {
+  padding: 0;
+}
+
+.admin_card_body ul li .main_input_wrap {
+  background: $bgWhite;
+  width: clamp(220px, 100%, 220px);
+  border-radius: 6px;
+}
+
+.percentage_input.MuiFormGroup-root {
+  flex-direction: row;
+  align-items: center;
+}
+
+.badge {
+  position: relative;
+  display: inline-block !important;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+}
+.bedge-warning {
+  background: $bgAlert;
+}
+.bedge-success {
+  background: $bgSuccess;
+}
+.bedge-danger {
+  background: $bgDanger;
+}
+.bedge-darkpink {
+  background: $bgDarkPink;
+}
+.bedge-pinkgradiant {
+  background: $bgPinkGradient;
+}
+.bedge-darkalert {
+  background: $bgDarkAlert;
+}
+.bedge-darkdanger {
+  background: $bgDarkDanger;
+}
+.bedge-purple {
+  background: $bgPurple;
+}
+.bedge-darksuccess {
+  background: $bgDarkSuccess;
+}
+.file_upload_wrap {
+  background: $bgWhite;
+  border-radius: 6px;
+}
+
+.file_upload_wrap .MuiButtonBase-root {
+  background: $primary;
+  box-shadow: none;
+  margin-bottom: 0;
+}
+.file_upload_wrap .MuiButtonBase-root:hover {
+  background: #f22b61;
+  box-shadow: none;
+}
+.file_upload_wrap .MuiSvgIcon-root {
+  color: $textLight;
+}
+.file_upload_wrap .MuiTypography-caption {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.file_upload_wrap .MuiBox-root:hover {
+  border-color: $primary;
+}
+.file_upload_wrap > .MuiBox-root {
+  background: #f3f7fc;
+  margin: 10px;
+  border: 1px dashed #dadddf;
+  padding: 22px 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.file_upload_wrap .MuiButtonBase-root .MuiSvgIcon-root,
+.file_upload_wrap .MuiButtonBase-root .MuiChip-label {
+  fill: $bgWhite;
+  color: $bgWhite;
+}
+
+.custom_select_box {
+  padding: 10px;
+  border-radius: 5px;
+  background: $bgWhite;
+  margin: 0 10px;
+}
+.custom_select_box .cusom_select_inner {
+  background: #f3f7fc;
+  border: 1px dashed #dadddf;
+  height: 100%;
+  padding: 22px 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.custom_popup .MuiDialog-container .MuiPaper-root {
+  max-width: 1160px;
+  width: 100%;
+}
+
+.custom_popup .card_wrapper .admin_card_body > ul > li > .row {
+  align-items: start;
+}
+
+.custom-file-upload input {
+  display: none;
+}
+
+.card_wrapper .admin_card_body ul.custom_admin_card_inner > li {
+  background: $bgGray;
+  padding: 7px 15px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.btn_success {
+  background: transparent;
+  color: $bgSuccess !important;
+  border: 1px solid $bgSuccess;
+  padding: 5px 12px;
+  font-size: 13px;
+  line-height: 18px;
+  border-radius: 5px;
+  text-decoration: none !important;
+  display: inline-flex;
+  align-items: center;
+  transition: 0.4s ease;
+  &:hover {
+    background: $bgSuccess;
+    color: $bgWhite !important;
+    border-color: $bgSuccess;
+  }
+  &:focus {
+    background: $bgSuccess;
+    color: $bgWhite !important;
+    border-color: $bgSuccess;
+  }
+}
+
+.card_wrapper .admin_card_body > ul.limit_venue_wrap > li {
+  display: flex;
+}
+
+.card_wrapper .admin_card_body ul.limit_venue_wrap .card_content_left {
+  width: 21%;
+}
+.card_wrapper .admin_card_body ul.limit_venue_wrap .card_content_right {
+  width: calc(100% - 21%);
+}
+
+.text_danger {
+  color: $bgDanger;
+}
+
+.text_success {
+  color: $bgSuccess;
+}
+
+.grey_scale {
+  filter: grayscale(1);
+}
+
+.limit_venue_wrap .limit_input {
+  width: clamp(456px, 100%, 456px);
+}
+
+.form-control.input_color {
+  padding: 4px 25px 4px 10px;
+  width: 100%;
+}
+.input_color_wrap {
+  width: 100%;
+  max-width: 80px;
+  position: relative;
+}
+.input_color_wrap::after {
+  content: '';
+  position: absolute;
+  top: 46%;
+  right: 8px;
+  display: inline-block;
+  background-image: url(../../Img/down-arrow-gray.svg);
+  background-size: 12px;
+  width: 12px;
+  height: 12px;
+}
+
+.table_medium_wrapper .MuiPaper-root table tbody tr td p.description {
+  max-width: 300px;
+  white-space: break-spaces;
+}
+
+.checkbox_white .MuiFormControlLabel-label {
+  color: $bgWhite;
+}
+.checkbox_white .MuiButtonBase-root.MuiCheckbox-root.Mui-checked:before {
+  border-color: $bgWhite;
+}
+.checkbox_white .MuiButtonBase-root.MuiCheckbox-root:after {
+  filter: brightness(0) invert(1);
+}
+
+.security_advance_wrap ul li {
+  margin-bottom: 5px;
+}
+
+.event_product_inner ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.event_product_inner ul li {
+  border-radius: 10px;
+  background: #ffffff;
+  margin-right: 15px;
+  width: calc(20% - 15px);
+  padding: 5px 15px;
+  min-height: 48px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  flex-direction: column;
+}
+.event_date_inner ul li label {
+  font-size: 13px;
+  line-height: 18px;
+  margin-right: 12px;
+  margin-left: 5px;
+}
+.event_date_inner .select_wrap {
+  width: 220px;
+}
+.system_radio_group ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.event_date_inner .main_input_wrap {
+  width: 110px !important;
+}
+.event_date_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.event_date_inner .date_picker .MuiFormControl-root {
+  width: 140px;
+}
+
+.event_date_table_wrap .MuiPaper-root table tbody tr td {
+  background: $bgGray;
+}
+.custom_radio .text_alert .MuiFormControlLabel-label {
+  color: $bgAlert;
+}
+.custom_radio .text_success .MuiFormControlLabel-label {
+  color: $bgSuccess;
+}
+.custom_radio .text_info .MuiFormControlLabel-label {
+  color: $bgInfo;
+}
+.custom_radio .text_primary .MuiFormControlLabel-label {
+  color: $primary;
+}
+.custom_radio .text_darkalert .MuiFormControlLabel-label {
+  color: $bgDarkAlert;
+}
+.custom_radio .text_darksuccess .MuiFormControlLabel-label {
+  color: $bgDarkSuccess;
+}
+.custom_radio .text_pink .MuiFormControlLabel-label {
+  color: $bgDarkPink;
+}
+.custom_radio .text_darkdanger .MuiFormControlLabel-label {
+  color: $bgDarkDanger;
+}
+.custom_radio .text_purple .MuiFormControlLabel-label {
+  color: $bgPurple;
+}
+.clone_popup h4 {
+  margin: 5px 0 30px 0;
+  padding: 0 42px;
+}
+.card_wrapper .card_body > ul > li.bg_white_box {
+  background: $bgWhite;
+}
+
+.check_purple .MuiFormControlLabel-label {
+  color: $bgPurple;
+}
+.check_info .MuiFormControlLabel-label {
+  color: $bgInfo;
+}
+
+.table_faqs_active .MuiPaper-root table tbody tr td p.description,
+.table_faqs_inactive .MuiPaper-root table tbody tr td p.description {
+  max-width: 700px;
+}
+.inline_checkbox_wrap.new_checkbox .MuiFormControlLabel-root {
+  margin-right: 0;
+}
+
+.event_date_inner .date_picker {
+  margin-right: 12px;
+}
+
+.clone_popup .MuiDialog-container > .MuiPaper-root h2.MuiTypography-root {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 35px;
+}
+
+.table_main_Wrapper .MuiPaper-root table tbody tr.white_row td {
+  background: #ffffff;
+}
+
+.file_custom_wrap .custom_select_box {
+  width: 300px;
+}
+
+.custom_ckeditor {
+  max-width: 725px;
+}
+
+.limit_venue_wrap
+  .form-group.checkbox_wrap
+  .MuiFormControlLabel-root
+  .MuiFormControlLabel-label {
+  white-space: pre-wrap;
+}
+.custom_capital .MuiInputBase-input {
+  text-transform: capitalize !important;
+}
+
+.popup_select .select_wrap {
+  width: 220px;
+}
+
+.custom_select_box .select_wrap {
+  width: 200px;
+}
+
+.file_custom_wrap {
+  max-width: 700px;
+  .file_upload_wrap {
+    width: 50%;
+  }
+  .upload_img {
+    width: calc(50% - 30px);
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-left: 30px;
+    img {
+      object-fit: cover;
+    }
+  }
+}
+
+.mail_asset_link_wrap li {
+  max-width: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 10px;
+  gap: 15px;
+}
+
+.lookup_address_wrap .btn_primary.small {
+  padding: 3px 12px;
+}
+
+.lookup_address_wrap .btn_primary.small .MuiSvgIcon-root {
+  font-size: 18px;
+}
+
+.show_more_data {
+  p.description {
+    height: 20px;
+    overflow: hidden;
+  }
+  &.expanded {
+    p.description {
+      height: 100%;
+    }
+  }
+  .show_more {
+    cursor: pointer;
+  }
+}
+
+.transfer-hide {
+  height: 20px;
+  overflow: hidden;
+}
+.transfer-show {
+  height: 100%;
+}
+
+.error_message {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  font-size: 13px;
+}
+.admin_card_body ul li .coupon_inner_table .main_input_wrap {
+  width: 100px;
+}
+.admin_card_body ul li .coupon_inner_table .main_input_wrap.date_picker {
+  width: 120px;
+}
+.admin_card_body ul li .coupon_inner_table .select_wrap {
+  width: 110px;
+}
+.admin_card_body
+  ul
+  li
+  .coupon_inner_table
+  .main_input_wrap.textare_input
+  .MuiInputBase-input {
+  height: 20px !important;
+}
+.lookup_error {
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+}
+.changes_places .lookup_error {
+  position: relative;
+  left: 0;
+  bottom: 0;
+}
+.collapse_wrap {
+  transform: rotate(0deg);
+  transition: 0.1s ease;
+}
+.collapse_wrap.active {
+  transform: rotate(45deg);
+}
+.lookup_data_wrap {
+  padding: 10px;
+  border: 1px solid $primary;
+  border-radius: 10px;
+}
+.lookup_data_inner {
+  height: 150px;
+  overflow: auto;
+  padding-right: 10px;
+}
+.lookup_data {
+  font-size: 13px;
+  line-height: 14px;
+  padding: 5px 8px;
+  border-radius: 6px;
+  border: 1px solid #f1f1f1;
+  margin-bottom: 8px;
+  cursor: pointer;
+  width: 100%;
+  text-align: start;
+  background: transparent;
+}
+
+.lookup_data:focus {
+  border: 1px solid #f54776;
+  color: #f54776;
+}
+
+.bg_transparent {
+  background: transparent !important;
+}
+
+@media (max-width: 1900px) {
+  .parties_option_wrap .option_flex {
+    flex-direction: column;
+    align-items: start !important;
+  }
+}
+
+@media (max-width: 1500px) {
+  .event_product_inner ul li {
+    width: calc(25% - 15px);
+  }
+  .event_date_inner .select_wrap {
+    width: 170px;
+  }
+  .custom_popup .MuiDialog-container .MuiPaper-root {
+    max-width: 950px;
+    width: 100%;
+  }
+  .MuiDialog-container > .MuiPaper-root h2.MuiTypography-root {
+    font-size: 22px;
+    line-height: 32px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .custom_popup .MuiDialog-container .MuiPaper-root {
+    max-width: 800px;
+    width: 100%;
+  }
+  .MuiDialog-container > .MuiPaper-root h2.MuiTypography-root {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+ul.pdf_link_wrap li a .pdf_text p {
+  word-break: break-word;
+}
+.mail_asset_link_wrap .pdf_text p {
+  word-break: break-all;
+  margin: 0;
+}

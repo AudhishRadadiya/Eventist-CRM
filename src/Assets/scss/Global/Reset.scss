@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+  font-family: 'Figtree';
+  src: url('../../fonts/Figtree/Figtree-SemiBold.eot');
+  src: url('../../fonts/Figtree/Figtree-SemiBold.eot?#iefix')
+      format('embedded-opentype'),
+    url('../../fonts/Figtree/Figtree-SemiBold.woff2') format('woff2'),
+    url('../../fonts/Figtree/Figtree-SemiBold.woff') format('woff'),
+    url('../../fonts/Figtree/Figtree-SemiBold.ttf') format('truetype'),
+    url('../../fonts/Figtree/Figtree-SemiBold.svg#Figtree-SemiBold')
+      format('svg');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Figtree';
+  src: url('../../fonts/Figtree/Figtree-Italic.eot');
+  src: url('../../fonts/Figtree/Figtree-Italic.eot?#iefix')
+      format('embedded-opentype'),
+    url('../../fonts/Figtree/Figtree-Italic.woff2') format('woff2'),
+    url('../../fonts/Figtree/Figtree-Italic.woff') format('woff'),
+    url('../../fonts/Figtree/Figtree-Italic.ttf') format('truetype'),
+    url('../../fonts/Figtree/Figtree-Italic.svg#Figtree-Italic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Figtree';
+  src: url('../../fonts/Figtree/Figtree-Bold.eot');
+  src: url('../../fonts/Figtree/Figtree-Bold.eot?#iefix')
+      format('embedded-opentype'),
+    url('../../fonts/Figtree/Figtree-Bold.woff2') format('woff2'),
+    url('../../fonts/Figtree/Figtree-Bold.woff') format('woff'),
+    url('../../fonts/Figtree/Figtree-Bold.ttf') format('truetype'),
+    url('../../fonts/Figtree/Figtree-Bold.svg#Figtree-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Figtree';
+  src: url('../../fonts/Figtree/Figtree-ExtraBold.eot');
+  src: url('../../fonts/Figtree/Figtree-ExtraBold.eot?#iefix')
+      format('embedded-opentype'),
+    url('../../fonts/Figtree/Figtree-ExtraBold.woff2') format('woff2'),
+    url('../../fonts/Figtree/Figtree-ExtraBold.woff') format('woff'),
+    url('../../fonts/Figtree/Figtree-ExtraBold.ttf') format('truetype'),
+    url('../../fonts/Figtree/Figtree-ExtraBold.svg#Figtree-ExtraBold')
+      format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Figtree';
+  src: url('../../fonts/Figtree/Figtree-Regular.eot');
+  src: url('../../fonts/Figtree/Figtree-Regular.eot?#iefix')
+      format('embedded-opentype'),
+    url('../../fonts/Figtree/Figtree-Regular.woff2') format('woff2'),
+    url('../../fonts/Figtree/Figtree-Regular.woff') format('woff'),
+    url('../../fonts/Figtree/Figtree-Regular.ttf') format('truetype'),
+    url('../../fonts/Figtree/Figtree-Regular.svg#Figtree-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Figtree';
+  src: url('../../fonts/Figtree/Figtree-Light.eot');
+  src: url('../../fonts/Figtree/Figtree-Light.eot?#iefix')
+      format('embedded-opentype'),
+    url('../../fonts/Figtree/Figtree-Light.woff2') format('woff2'),
+    url('../../fonts/Figtree/Figtree-Light.woff') format('woff'),
+    url('../../fonts/Figtree/Figtree-Light.ttf') format('truetype'),
+    url('../../fonts/Figtree/Figtree-Light.svg#Figtree-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Figtree';
+  src: url('../../fonts/Figtree/Figtree-Black.eot');
+  src: url('../../fonts/Figtree/Figtree-Black.eot?#iefix')
+      format('embedded-opentype'),
+    url('../../fonts/Figtree/Figtree-Black.woff2') format('woff2'),
+    url('../../fonts/Figtree/Figtree-Black.woff') format('woff'),
+    url('../../fonts/Figtree/Figtree-Black.ttf') format('truetype'),
+    url('../../fonts/Figtree/Figtree-Black.svg#Figtree-Black') format('svg');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Figtree';
+  src: url('../../fonts/Figtree/Figtree-Medium.eot');
+  src: url('../../fonts/Figtree/Figtree-Medium.eot?#iefix')
+      format('embedded-opentype'),
+    url('../../fonts/Figtree/Figtree-Medium.woff2') format('woff2'),
+    url('../../fonts/Figtree/Figtree-Medium.woff') format('woff'),
+    url('../../fonts/Figtree/Figtree-Medium.ttf') format('truetype'),
+    url('../../fonts/Figtree/Figtree-Medium.svg#Figtree-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Afacad';
+  src: url('../../fonts/Afacad/Afacad-Bold.eot');
+  src: url('../../fonts/Afacad/Afacad-Bold.eot?#iefix')
+      format('embedded-opentype'),
+    url('../../fonts/Afacad/Afacad-Bold.woff2') format('woff2'),
+    url('../../fonts/Afacad/Afacad-Bold.woff') format('woff'),
+    url('../../fonts/Afacad/Afacad-Bold.ttf') format('truetype'),
+    url('../../fonts/Afacad/Afacad-Bold.svg#Afacad-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Afacad';
+  src: url('../../fonts/Afacad/Afacad-SemiBold.eot');
+  src: url('../../fonts/Afacad/Afacad-SemiBold.eot?#iefix')
+      format('embedded-opentype'),
+    url('../../fonts/Afacad/Afacad-SemiBold.woff2') format('woff2'),
+    url('../../fonts/Afacad/Afacad-SemiBold.woff') format('woff'),
+    url('../../fonts/Afacad/Afacad-SemiBold.ttf') format('truetype'),
+    url('../../fonts/Afacad/Afacad-SemiBold.svg#Afacad-SemiBold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Afacad';
+  src: url('../../fonts/Afacad/Afacad-Italic.eot');
+  src: url('../../fonts/Afacad/Afacad-Italic.eot?#iefix')
+      format('embedded-opentype'),
+    url('../../fonts/Afacad/Afacad-Italic.woff2') format('woff2'),
+    url('../../fonts/Afacad/Afacad-Italic.woff') format('woff'),
+    url('../../fonts/Afacad/Afacad-Italic.ttf') format('truetype'),
+    url('../../fonts/Afacad/Afacad-Italic.svg#Afacad-Italic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Afacad';
+  src: url('../../fonts/Afacad/Afacad-Regular.eot');
+  src: url('../../fonts/Afacad/Afacad-Regular.eot?#iefix')
+      format('embedded-opentype'),
+    url('../../fonts/Afacad/Afacad-Regular.woff2') format('woff2'),
+    url('../../fonts/Afacad/Afacad-Regular.woff') format('woff'),
+    url('../../fonts/Afacad/Afacad-Regular.ttf') format('truetype'),
+    url('../../fonts/Afacad/Afacad-Regular.svg#Afacad-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Afacad';
+  src: url('../../fonts/Afacad/Afacad-Medium.eot');
+  src: url('../../fonts/Afacad/Afacad-Medium.eot?#iefix')
+      format('embedded-opentype'),
+    url('../../fonts/Afacad/Afacad-Medium.woff2') format('woff2'),
+    url('../../fonts/Afacad/Afacad-Medium.woff') format('woff'),
+    url('../../fonts/Afacad/Afacad-Medium.ttf') format('truetype'),
+    url('../../fonts/Afacad/Afacad-Medium.svg#Afacad-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+// $primary: #f54776;
+$primary: #fe3d67;
+$secondary: #272727;
+$darkGray: #454545;
+$lightGray: #eaeaea;
+$textLight: #b9b9b9;
+$textWhite: #ffffff;
+$textDark: #454545;
+$bgWhite: #ffffff;
+$borderColor: #dadddf;
+$bgLight: #f3f7fc;
+// $primaryGradient: linear-gradient(0deg, #f54776, #f54776);
+$primaryGradient: #fe3d67;
+$bgGray: #f1f1f1;
+$bgAlert: #ff9922;
+$bgAlertLight: #fff5e9;
+$bgDanger: #de3957;
+$bgDangerLight: #fcecef;
+$bgSuccess: #38a169;
+$bgSuccessLight: #ecf6f0;
+$bgInfo: #2986da;
+$bgInfoLight: #e5f0fa;
+$bgDarkSuccess: #207a00;
+$bgPurple: #9418c9;
+$bgPinkGradient: linear-gradient(0deg, #f54776, #f54776), #0b6bc2;
+$bgDarkPink: #c7137f;
+$bgDarkAlert: #d39431;
+$bgDarkDanger: #fe0008;
+
+body {
+  // font-family: 'Poppins', sans-serif;
+  font-family: 'Figtree';
+  background-color: $bgLight;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  min-width: 1024px;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Afacad';
+}
+
+::selection {
+  color: $textWhite;
+  background: $primary;
+}
+
+a {
+  transition: 0.5s ease;
+  text-decoration: none;
+  color: $textDark;
+  font-family: 'Figtree' !important;
+}
+
+a:hover {
+  color: $primary;
+}
+
+#toast_custom #desc {
+  height: 50px;
+  color: #fff;
+  padding: 12px 20px;
+  padding-left: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+#toast_custom #img {
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.text_decoration {
+  text-decoration: underline;
+}
+
+.white_space_nowrap {
+  white-space: nowrap;
+}
+.white_space_wrap {
+  white-space: break-spaces;
+}
+.min_width_auto {
+  min-width: inherit !important;
+}
+
+.text_uppercase {
+  text-transform: uppercase;
+}
+.text_capitalize {
+  text-transform: capitalize;
+}
+
+.text_dark {
+  color: $textDark !important;
+}
+.text_light {
+  color: $textLight !important;
+}
+.text_primary {
+  color: $primary !important;
+}
+.text_white {
+  color: $textWhite !important;
+}
+.text_green {
+  color: $bgSuccess !important;
+}
+
+h1 {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 600;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+h4 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+h5 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+h6 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: $textDark;
+  font-family: 'Figtree';
+}
+
+.fw_300 {
+  font-weight: 300;
+}
+.fw_400 {
+  font-weight: 400;
+}
+.fw_500 {
+  font-weight: 500;
+}
+.fw_600 {
+  font-weight: 600;
+}
+.fw_700 {
+  font-weight: 700;
+}
+
+.text_small {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.max_25 {
+  max-width: 25%;
+}
+.max_33 {
+  max-width: 33.3333%;
+}
+.max_50 {
+  max-width: 50%;
+}
+.max_66 {
+  max-width: 66.6677%;
+}
+.max_75 {
+  max-width: 75%;
+}
+.max_100 {
+  max-width: 100%;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e6edef;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a1a1a1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $primaryGradient;
+}
+:focus-visible {
+  outline: 0;
+}
