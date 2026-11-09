@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Typography from '@mui/material/Typography';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
@@ -20,7 +20,6 @@ import {
 import Loader from 'Components/Common/Loader';
 import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
-import moment from 'moment';
 import { yearsThreeYearsInThePastOneYearInTheCurrent } from 'utils/FieldValues';
 import PdfPopup from 'Components/Common/pdfPopup';
 
@@ -46,13 +45,16 @@ export default function ComparisonTypeReport() {
     week_number: '',
   });
 
-  let weekDetails = salesWeekNumberList?.filter(
-    i => i.label === reportData?.week_number,
-  )[0];
-  const weekOptions = salesWeekNumberList?.map(week => ({
-    label: week?.label,
-    value: week?.label,
-  }));
+  const weekDetails = useMemo(() => {
+    return salesWeekNumberList?.find(i => i.label === reportData?.week_number);
+  }, [reportData?.week_number]);
+
+  const weekOptions = useMemo(() => {
+    return salesWeekNumberList?.map(week => ({
+      label: week?.label,
+      value: week?.label,
+    }));
+  }, [salesWeekNumberList]);
 
   const handleChange = e => {
     const { name, value } = e.target;
@@ -66,9 +68,7 @@ export default function ComparisonTypeReport() {
     let payload = {
       type: reportData?.type,
       year: reportData?.year,
-      week_number_date: moment(weekDetails?.date, 'DD.MM.YYYY').format(
-        'YYYY-MM-DD',
-      ),
+      week_number_date: weekDetails?.week1,
     };
     dispatch(getComparisonTypeReport(payload));
     setIsReportCheck(true);

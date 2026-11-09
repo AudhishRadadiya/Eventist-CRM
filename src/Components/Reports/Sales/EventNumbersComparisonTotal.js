@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Typography from '@mui/material/Typography';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
@@ -25,7 +25,6 @@ import {
 import Loader from 'Components/Common/Loader';
 import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
-import moment from 'moment';
 import PdfPopup from 'Components/Common/pdfPopup';
 
 Date.prototype.getWeek = function () {
@@ -34,28 +33,34 @@ Date.prototype.getWeek = function () {
 };
 export default function EventNumbersComparison() {
   const dispatch = useDispatch();
-  const { salesWeekNumberList, salesContactSourcesLoading } = useSelector(
-    ({ salesReport }) => salesReport,
-  );
-  const [pdfLoader, setPdfLoader] = useState(false);
-  const [isReportCheck, setIsReportCheck] = useState(false);
-  const [pdfUrl, setPdfUrl] = useState('');
+
   const [reportData, setReportData] = useState({
     compare_year: new Date().getFullYear(),
     with_year: new Date().getFullYear() - 1,
     week_number: '',
   });
-  let weekDetails = salesWeekNumberList?.filter(
-    i => i.label === reportData?.week_number,
-  )[0];
+  const [pdfUrl, setPdfUrl] = useState('');
+  const [pdfLoader, setPdfLoader] = useState(false);
+  const [isReportCheck, setIsReportCheck] = useState(false);
 
-  const weekOptions = salesWeekNumberList?.map(week => ({
-    label: week?.label,
-    value: week?.label,
-  }));
+  const { salesWeekNumberList, salesContactSourcesLoading } = useSelector(
+    ({ salesReport }) => salesReport,
+  );
+
+  const weekDetails = useMemo(() => {
+    return salesWeekNumberList?.find(i => i.label === reportData?.week_number);
+  }, [reportData?.week_number]);
+
+  const weekOptions = useMemo(() => {
+    return salesWeekNumberList?.map(week => ({
+      label: week?.label,
+      value: week?.label,
+    }));
+  }, [salesWeekNumberList]);
 
   const handleChange = e => {
     const { name, value } = e.target;
+
     setReportData(prevState => ({
       ...prevState,
       [name]: value,
@@ -66,7 +71,7 @@ export default function EventNumbersComparison() {
     let payload = {
       compare_year: reportData?.compare_year,
       with_year: reportData?.with_year,
-      week_number: moment(weekDetails?.date, 'DD.MM.YYYY').format('YYYY-MM-DD'),
+      week_number: weekDetails?.week1,
     };
     dispatch(getEventNumbersComparisonTotals(payload));
     setIsReportCheck(true);
@@ -151,6 +156,7 @@ export default function EventNumbersComparison() {
       });
     }
   };
+
   return (
     <div className="inner_wrapper">
       {salesContactSourcesLoading && pdfLoader && <Loader />}

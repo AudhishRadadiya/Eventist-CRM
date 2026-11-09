@@ -33,8 +33,8 @@ import {
 } from 'store/reducers/UploadImage/uploadImage.slice';
 import { useDispatch, useSelector } from 'react-redux';
 import { showMessage } from 'store/reducers/common.slice';
-import { getMailAssetsListData } from 'store/reducers/Admin/Mail/mailAssets.slice';
 import { getAllAttachments } from 'store/reducers/mail/mail.slice';
+import { getMailAssetsListData } from 'store/reducers/Admin/Mail/mailAssets.slice';
 
 export default function AddEditTransactionalEmails() {
   const dispatch = useDispatch();
